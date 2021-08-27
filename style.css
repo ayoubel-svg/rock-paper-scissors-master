@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: rgb(12, 61, 124);
+  width: 100%;
+  height: 100vh;
+}
+.scoreSection {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  border: 2px solid rgb(89, 111, 153);
+  width: 40%;
+  height: 6.7rem;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.title img {
+  width: 80%;
+}
+.theScore {
+  width: 100px;
+  height: 5rem;
+  background: white;
+  color: rgb(40, 60, 146);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.theScore h3 {
+  font-family: sans-serif;
+}
+.score {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.theTriangle img {
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  font-size: 20%;
+}
+.borderRock {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  left: 43%;
+  background: rgb(189, 49, 72);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  background-repeat: no-repeat;
+}
+.borderRock:hover {
+  transform: scale(1.1);
+}
+.rockSection {
+  background: white;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.borderPaper {
+  cursor: pointer;
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  background: rgb(49, 109, 201);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.borderPaper:hover {
+  transform: scale(1.1);
+}
+.paperSection {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.borderScissors {
+  cursor: pointer;
+  position: absolute;
+  top: 37%;
+  right: 37%;
+  width: 160px;
+  height: 160px;
+  background: yellow;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.borderScissors:hover {
+  transform: scale(1.1);
+}
+.scissorsSection {
+  background: white;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theResultPage {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.sentenceSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.resultSentence {
+  position: absolute;
+  top: 200%;
+  font-family: sans-serif;
+}
+.replay {
+  position: absolute;
+  top: 450%;
+  left: 44%;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.replay:hover {
+  transform: translate3d(0px, -2px, 0px);
+}
+.playerSection {
+  margin-left: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.borderPlayer {
+  background: black;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playerSection h3 {
+  font-family: "Titillium Web", sans-serif;
+}
+.backPlayer {
+  width: 110px;
+  height: 110px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player {
+  width: 50%;
+  height: 50%;
+}
+.computureSection {
+  margin-right: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.computureSection h3 {
+  font-family: "Titillium Web", sans-serif;
+}
+.borderComputureRock {
+  visibility: hidden;
+  cursor: pointer;
+  position: absolute;
+  background: rgb(189, 49, 72);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  background-repeat: no-repeat;
+}
+.backComputureRock {
+  background: white;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.borderComputurePaper {
+  visibility: hidden;
+  cursor: pointer;
+  position: absolute;
+  background: rgb(49, 109, 201);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  background-repeat: no-repeat;
+}
+.backComputurePaper {
+  background: white;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.borderComputureScissors {
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+  background: yellow;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  background-repeat: no-repeat;
+}
+.backComputureScissors {
+  background: white;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.computureImg {
+  position: absolute;
+  top: 150%;
+  right: 35%;
+}
+.resultSentence {
+  font-size: 35px;
+}
